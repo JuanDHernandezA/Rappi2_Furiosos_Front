@@ -1,0 +1,33 @@
+<img class="tamañoi" src="../assets/img/comida5.jpg">
+
+<div class="texto">
+    <h1>Bienvenido</h1><br><br><br>
+    <p>Ingresa tus datos</p>
+</div>
+
+
+<form class="example-form" (submit)="Ingresar(tipo.value, nombre.value, pass.value)">
+    <mat-form-field class="example-full-width">
+        <mat-label>Tipo de ususario</mat-label>
+        <mat-select #tipo>
+            <mat-option value="cliente">Cliente</mat-option>
+            <mat-option value="restaurante">Restaurante</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Nombre </mat-label>
+        <input matInput #nombre>
+    </mat-form-field>
+
+
+    <br>
+    <mat-form-field class="example-full-width">
+        <mat-label>Contraseña</mat-label>
+        <input matInput type="password" #pass>
+    </mat-form-field>
+
+
+    <button mat-raised-button>Ingresar</button>
+    <a class="boton" mat-raised-button href="/registro-usuario" >Registrarse</a>
+</form>
